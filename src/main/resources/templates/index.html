@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+    <script th:src="@{/assets/js/script.js}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers Finder</title>
+</head>
+<body>
+
+<div class="settings">
+    <h1>Find prime numbers</h1>
+    <input class="min-width-input" placeholder="Enter a number" type="number" min="2" id="numberInput" max="100000"/>
+    <label for="algorithmSelect">Choose an algorithm:</label>
+    <select id="algorithmSelect">
+        <option value="SieveOfEratosthenes">Sieve of Eratosthenes</option>
+        <option value="SieveOfSundaram">Sieve of Sundaram</option>
+    </select>
+    <button onclick="checkNumber()">Generate</button>
+    <div id="timeElapsed"></div>
+    <label id="ErrorMessage"></label>
+</div>
+
+<div class="containerBody" id="containerBody">
+    <div class="container" id="result"></div>
+</div>
+</body>
+</html>
