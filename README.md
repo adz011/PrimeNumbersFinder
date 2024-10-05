@@ -25,6 +25,8 @@ You can run the application using command:
 ```sh
 mvn spring-boot:run
 ```
+Go to localhost:8080 to see the application
+
 ### Tools used:
 - Java 11
 - Spring Boot 2.7.18
